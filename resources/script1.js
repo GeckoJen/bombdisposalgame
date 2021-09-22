@@ -150,7 +150,14 @@ defuse.onclick = function(){
     bombHousing.style.display = 'none';
     instructions.style.display = 'none';
     successes += 1;
-    if (seconds < score) {
+    if (score < 10) {
+        numScore = '00' + time;
+    } else if (score < 100) {
+        numScore = '0' + time
+    } else {
+        numScore = time;
+    }
+    if (seconds < numScore) {
         score = time;
         highScore.innerHTML = 'High score this session: ' + score + ' seconds'
         }
