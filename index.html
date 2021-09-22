@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href='./resources/stylesheet.css' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <script src='./resources/script1.js' async></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bomb Disposal</title>
+    </head>
+    <body>
+        <header>
+            <div id='introText'>
+            <h1>Gecko Bomb Disposal Squad</h1>
+            <h2>Do you have what it takes to disarm the bomb under time pressure?</h2>
+            <h3>Click 'start new puzzle' below to get a new puzzle and the disarming instructions.</h3>
+            </div>
+            <button id='start'>Start new puzzle!</button>
+            <img id='initBomb' src='./resources/images/bomb.png'/>
+        </header>
+        <div id='kaboom'>
+            <img src='./resources/images/kaboom.png'/>
+        </div>
+        <div>
+            <button id='timeTaken'></button>
+            <button id='high-score'> </button>
+            <button id='stats'> </button>
+        </div>
+        <div id='thumbsup'>
+            <img src='./resources/images/thumbs up.png'/>
+        </div>
+        
+        
+        <main>
+                    
+            
+        <div id='left-column'>
+            <div id='bomb-housing'>
+                <div id='serial-number'>
+                    <p>Serial number: <span id='randomNo'><p>123456</p></span></p>
+                </div>
+                <div class='number no1'>
+                    <div class='LHS' id='1LHS'></div>
+                    <div class='wire' id='1wire'></div>
+                    <div class='RHS' id='1RHS'></div>
+                </div>
+                <div class='number no2'>
+                    <div class='LHS' id='2LHS'></div>
+                    <div class='wire' id='2wire'></div>
+                    <div class='RHS' id='2RHS'></div>
+                </div>
+                <div class='number no3'>
+                    <div class='LHS' id='3LHS'></div>
+                    <div class='wire' id='3wire'></div>
+                    <div class='RHS' id='3RHS'></div>
+                </div>
+                <div class='number no4'>
+                    <div class='LHS' id='4LHS'></div>
+                    <div class='wire' id='4wire'></div>
+                    <div class='RHS' id='4RHS'></div>
+                </div>
+                <div class='number no5'>
+                    <div class='LHS' id='5LHS'></div>
+                    <div class='wire' id='5wire'></div>
+                    <div class='RHS' id='5RHS'></div>
+                </div>
+                <div class='number no6'>
+                    <div class='LHS' id='6LHS'></div>
+                    <div class='wire' id='6wire'></div>
+                    <div class='RHS' id='6RHS'></div>
+                </div>
+                <div id='cut-text'>
+                    <p>Click on each wire to cut it</p>
+                </div>
+            </div>
+            
+        </div>
+        <div id='right-column'>
+            <div id='instructions'>
+                <p>Follow these instructions to disarm the bomb:</p>
+                <img src='./resources/images/venn diagram instructions.jpg'/>
+            </div>
+            <div >
+            <div id='defuse'>
+                <button id='defusebutton'>Defuse</button>
+            </div>
+            
+        </div>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
