@@ -34,7 +34,7 @@ const RHS6 = document.getElementById('6RHS');
 let answer = [];
 let beginTime = 0;
 let finishTime = 0;
-let score = 10000000;
+let score = 1000;
 let successes = 0;
 let failures = 0;
 
@@ -151,11 +151,11 @@ defuse.onclick = function(){
     instructions.style.display = 'none';
     successes += 1;
     if (score < 10) {
-        numScore = '00' + time;
+        numScore = '00' + score;
     } else if (score < 100) {
-        numScore = '0' + time
+        numScore = '0' + score
     } else {
-        numScore = time;
+        numScore = score;
     }
     if (seconds < numScore) {
         score = time;
